@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="82dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:src="@mipmap/team_logo" />
+
+    <TextView
+        android:id="@+id/permissionDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:text="IO.SIS requires your permission to continue, please enable permissions."
+        />
+
+    <RelativeLayout
+        android:id="@+id/statusRelativeLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/statusImage"
+                android:layout_width="wrap_content"
+                android:src="@drawable/ic_red_icon"
+                android:layout_height="wrap_content"
+                />
+
+            <TextView
+                android:id="@+id/statusText"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:gravity="center_vertical"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:text="Service Stopped" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:gravity="center|bottom"
+        android:orientation="vertical"
+        android:layout_marginBottom="20dip"
+        >
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Clear Saved Pin (For testing)"
+            android:layout_marginBottom="30dp"
+            android:onClick="clearPin"
+            android:id="@+id/clearPinButton"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="View All Usage Records (For testing)"
+            android:onClick="viewAllUsageRecords"
+            android:id="@+id/viewAllUsageRecordsButton"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Delete All Usage Records (For testing)"
+            android:onClick="deleteAllUsageRecords"
+            android:layout_marginBottom="30dp"
+            android:id="@+id/deleteAllUsageRecordsButton"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="View All Beacon Records (For testing)"
+            android:onClick="viewAllBeaconRecords"
+            android:id="@+id/viewAllBeaconRecordsButton"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Delete All Beacon Records (For testing)"
+            android:onClick="deleteAllBeaconRecords"
+            android:layout_marginBottom="30dp"
+            android:id="@+id/deleteAllBeaconRecordsButton"/>
+
+        <!-- Requires AppCompat for backgroundTint (API>=21) -->
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/start_service"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="startService"
+            android:visibility="gone"
+            android:text="Start Service"
+            android:layout_gravity="center_horizontal|center"
+            android:background="#5F9ED2"
+            android:textColor="#fff"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/stop_service"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="stopService"
+            android:visibility="gone"
+            android:text="Stop Service"
+            android:layout_gravity="center_horizontal|center"
+            android:background="#5F9ED2"
+            android:textColor="#fff"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/grant_permission"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="grantPermission"
+            android:text="Enable Permissions"
+            android:layout_gravity="center_horizontal|center"
+            android:background="#5F9ED2"
+            android:textColor="#fff"/>
+    </LinearLayout>
+
+
+
+</LinearLayout>
