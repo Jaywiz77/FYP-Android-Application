@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/backgroundColor"
+    tools:context=".SplashActivity">
+
+    <ImageView
+        android:id="@+id/appLogo"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:src="@mipmap/team_logo" />
+
+    <RelativeLayout
+        android:gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="15dp">
+
+        <TextView android:id="@+id/textDisplay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/teamLogo"
+            android:text="Developed by team "
+            android:textSize="16dp"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:layout_marginRight="5dp"
+            android:layout_alignParentBottom="true">
+        </TextView>
+
+        <ImageView
+            android:id="@+id/teamLogo"
+            android:layout_width="50dp"
+            android:layout_height="28dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:src="@mipmap/team_logo"
+            android:text="submit"></ImageView>
+    </RelativeLayout>
+</RelativeLayout>

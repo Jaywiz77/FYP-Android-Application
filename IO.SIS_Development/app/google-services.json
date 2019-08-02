@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "650545604716",
+    "firebase_url": "https://io-sis-dev.firebaseio.com",
+    "project_id": "io-sis-dev",
+    "storage_bucket": "io-sis-dev.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:650545604716:android:0c9ae403619ebe84",
+        "android_client_info": {
+          "package_name": "com.io.sis.development"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "650545604716-q5593lq0sjfph2i4saelfd1pqponudrf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAUIRrA9pm0CuAosZid8dszpuHWsPtDnO4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "650545604716-q5593lq0sjfph2i4saelfd1pqponudrf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
